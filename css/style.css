@@ -1,0 +1,112 @@
+/* Body, Html 
+______________ */
+
+body {
+	color: white;
+}
+
+/* Sections
+____________ */
+
+section {
+	text-align: center;
+	padding: 5rem 0;
+}
+
+.hero {
+	background: #18BC9C;
+}
+
+.competencies, .experience {
+	background: 
+		linear-gradient(
+			rgba(24, 188, 156, 0.5),
+			rgba(24, 188, 156, 0.5)
+		),
+
+		url("../images/background.jpg");
+}
+
+.school, .job {
+	text-align: left;
+	padding: 0;
+}
+
+.school:not(:last-child), .job:not(:last-child) {
+	margin-bottom: 2rem;
+}
+
+/* Dark and Light Styles */
+
+.light {
+	color: rgba(0,0,0,0.8);
+	background: #F9F9F9;
+}
+
+/* Images 
+____________ */
+
+#profilePic {
+	width: 256px;
+	height: 256px;
+	border-radius: 50%;
+}
+
+/* Typography
+______________ */
+
+.hero h1 {
+	font-weight: bold;
+}
+
+hr {
+	max-width: 500px;
+}
+
+.hero hr {
+	max-width: 250px;
+}
+
+.dark hr {
+	border-top: 5px solid white;
+}
+
+.light hr {
+	border-top: 5px solid rgba(0,0,0,0.8);
+}
+
+.hero hr::after {
+	display: inline-block;
+	content: "\f005";
+	font-family: FontAwesome;
+	font-size: 3rem;
+	position: relative;
+	top: -3rem;
+	padding: 0 1rem;
+	background: #18BC9C;
+}
+
+p {
+	max-width: 607px;
+	text-align: left;
+	margin: 0 auto;
+}
+
+.schoolName, .jobName {
+	margin-bottom: 0;
+}
+
+/* Lists
+__________________ */
+
+ul {
+	margin-bottom: 0;
+}
+
+ul li {
+	list-style-position: outside;
+}
+
+.competencies ul li {
+	list-style-position: inside;
+}
